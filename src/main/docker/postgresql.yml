@@ -1,0 +1,12 @@
+version: '2'
+services:
+    ioa-postgresql:
+        container_name: ioa-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/ioa/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=ioa
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
